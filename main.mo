@@ -28,7 +28,7 @@ actor{
   };
 
   public func getPhone(name: Name) : async ?Entry {
-    phoneBook.get(name);
+    return phoneBook.get(name);
   };
 
   public func getMessage(senderPhone: Phone): async ?Message {
