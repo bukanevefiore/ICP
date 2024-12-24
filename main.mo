@@ -31,7 +31,7 @@ actor{
     return phoneBook.get(name);
   };
 
-  public func getMessage(senderPhone: Phone): async ?Message {
+  public query func getMessage(senderPhone: Phone): async ?Message {
     return MessageHistory.get(senderPhone);
   };
 
